@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Menú de navegación */
+header {
+    background-color: #000;
+    padding: 5px 0; /* Incremento de espacio en el menú */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 80px; /* Espacio entre elementos del menú reducido */
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px; /* Ajuste de padding para menú más compacto */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Logo en el menú */
+.logo img {
+    width: 100px; /* Tamaño del logo ajustado */
+    height: auto;
+}
+
+/* Portada */
+.portada img {
+    width: 100%;
+    height: auto;
+}
+
+/* Redes sociales */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: row; /* Mantener el menú en fila en pantallas pequeñas */
+        justify-content: space-around; /* Distribuir uniformemente los elementos */
+        align-items: center; /* Centrar verticalmente los elementos */
+    }
+
+    .menu li {
+        margin: 0 10px; /* Espacio entre elementos del menú */
+    }
+
+    .logo img {
+        width: 60px; /* Tamaño del logo reducido para dispositivos móviles */
+    }
+
+    .social-icons {
+        display: none; /* Ocultar íconos sociales en pantallas pequeñas */
+    }
+}
+
